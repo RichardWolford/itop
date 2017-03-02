@@ -11,6 +11,8 @@ CMD ["mysqld"]
 CMD ["httpd"]
 
 RUN wget http://sourceforge.net/projects/itop/files/itop/2.0.2/iTop-2.0.2-1476.zip
+RUN unzip iTop-2.0.2-1476.zip
+RUN cp -fr web/ /var/www/html/itop
 
 EXPOSE 80
 EXPOSE 443
