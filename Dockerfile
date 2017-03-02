@@ -8,10 +8,10 @@ CMD ["httpd"]
 
 RUN yum install mysql -y
 
-#RUN chkconfig httpd on
+RUN chkconfig httpd on
 
 EXPOSE 80
 EXPOSE 443
-
+EXPOSE 3306
 
 CMD ["/usr/sbin/init"]
