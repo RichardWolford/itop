@@ -3,7 +3,7 @@ MAINTAINER Richard Wolford <richard.wolford@hpe.com>
 
 ENV container=docker
 
-RUN yum install httpd mysql mysql-server wget php-mysql php-mcrypt php-xml php-cli php-soap php-ldap graphviz -y
+RUN yum install httpd mysql mysql-server wget unzip php-mysql php-mcrypt php-xml php-cli php-soap php-ldap graphviz -y
 
 RUN chkconfig httpd on
 
