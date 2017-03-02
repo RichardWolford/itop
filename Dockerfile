@@ -3,9 +3,9 @@ MAINTAINER Richard Wolford <richard.wolford@hpe.com>
 
 ENV container=docker
 
-RUN chkconfig httpd on
-
 RUN yum install httpd mysql mysql-server php-mysql php-mcrypt php-xml php-cli php-soap php-ldap graphviz -y
+
+RUN chkconfig httpd on
 
 CMD ["mysqld"]
 CMD ["httpd"]
