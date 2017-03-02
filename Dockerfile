@@ -5,6 +5,9 @@ ENV container=docker
 
 RUN yum install httpd -y 
 CMD ["httpd"]
+
+RUN yum install mysql -y
+
 #RUN chkconfig httpd on
 
 EXPOSE 80
