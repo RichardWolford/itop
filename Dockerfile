@@ -4,7 +4,7 @@ MAINTAINER Richard Wolford <richard.wolford@hpe.com>
 ENV container=docker
 
 RUN yum install httpd -y 
-RUN	systemctl start httpd
+EXEC httpd
 #RUN chkconfig httpd on
 
 EXPOSE 80
